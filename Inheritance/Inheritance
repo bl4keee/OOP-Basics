@@ -1,0 +1,42 @@
+package Inheritance;
+
+public class Eagle extends Bird {
+
+	public String name = "Eagle";
+	public int lifespan = 11;
+}
+
+package Inheritance;
+
+public class TestEagle {
+
+	public static void main(String[] args) {
+		
+		Eagle myEagle = new Eagle();
+		
+		System.out.println("Name: " + myEagle.name);
+		System.out.println("Lifespan: " + myEagle.lifespan);
+		System.out.println("Reproduction: " + myEagle.reproduction);
+		System.out.println("Outer covering: " + myEagle.outerCovering);
+		
+		myEagle.flyUp();
+		myEagle.flyDown();
+
+	}
+
+}
+
+package Inheritance;
+
+public class Bird {
+
+	public String reproduction = "egg";
+	public String outerCovering = "feather";
+	
+	public void flyUp() {
+		System.out.println("Flying up...");
+	}
+	public void flyDown() {
+		System.out.println("Flying down...");
+	}
+}
