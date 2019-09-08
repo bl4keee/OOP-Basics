@@ -1,0 +1,75 @@
+
+public class Fish extends Animal {
+
+	@Override
+	void move() {
+		System.out.println("Moves by swimming.");
+
+	}
+
+	@Override
+	void eat() {
+		System.out.println("Eats seafood.");
+
+	}
+
+}
+
+
+public class TestBird {
+
+	public static void main(String[] args) {
+		
+		Animal myBird = new Bird();
+		
+		myBird.label();
+		myBird.eat();
+		myBird.move();
+
+	}
+
+}
+
+
+public class TestFish {
+
+	public static void main(String[] args) {
+		
+		Animal myFish = new Fish();
+		
+		myFish.label();
+		myFish.eat();
+		myFish.move();
+		
+
+	}
+
+}
+
+abstract class Animal {
+	
+	//abstract methods
+	abstract void move();
+	abstract void eat();
+	
+	//concrete method
+	void label() {
+		System.out.println("Animal's data: ");
+	}
+}
+
+public class Bird extends Animal {
+
+	@Override
+	void move() {
+		System.out.println("Moves by flying.");
+
+	}
+
+	@Override
+	void eat() {
+		System.out.println("Eats birdfood.");
+
+	}
+
+}
