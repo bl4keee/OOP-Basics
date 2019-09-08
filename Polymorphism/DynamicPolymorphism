@@ -1,0 +1,34 @@
+package DynamicPolymorphism;
+
+public class Bird extends Animal {
+
+	public void eat() {
+		System.out.println("This bird eats seeds.");
+	}
+}
+
+package DynamicPolymorphism;
+
+public class TestBird {
+
+	public static void main(String[] args) {
+		
+		Animal myAnimal = new Animal();
+		myAnimal.eat();
+		
+		Bird myBird = new Bird();
+		myBird.eat();
+		
+
+	}
+
+}
+
+package DynamicPolymorphism;
+
+public class Animal {
+
+	public void eat() {
+		System.out.println("This animal eats insects.");
+	}
+}
